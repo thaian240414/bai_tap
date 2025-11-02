@@ -24,6 +24,8 @@ def dieu_khien_led1():
         led1.bg = "green"
     elif led1.bg == "green":
         led1.bg = "gray"
+    else:
+        print("Lỗi")
 
 
 def dieu_khien_led2():
@@ -31,6 +33,8 @@ def dieu_khien_led2():
         led2.bg = "green"
     elif led2.bg == "green":
         led2.bg = "gray"
+     else:
+        print("Lỗi")
 
 
 def dieu_khien_led3():
@@ -38,6 +42,8 @@ def dieu_khien_led3():
         led3.bg = "green"
     elif led3.bg == "green":
         led3.bg = "gray"
+     else:
+        print("Lỗi")
 
 
 app = App(title="LED Control", width=400, height=300)
@@ -58,5 +64,6 @@ PushButton(box_nut, text="Nút 1", grid=[0,0], command=dieu_khien_led1)
 PushButton(box_nut, text="Nút 2", grid=[1,0], command=dieu_khien_led2)
 
 PushButton(box_nut, text="Nút 3", grid=[2,0], command=dieu_khien_led3)
+
 
 app.display()
