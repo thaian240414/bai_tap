@@ -33,7 +33,7 @@ def dieu_khien_led2():
         led2.bg = "green"
     elif led2.bg == "green":
         led2.bg = "gray"
-     else:
+    else:
         print("Lỗi")
 
 
@@ -42,7 +42,7 @@ def dieu_khien_led3():
         led3.bg = "green"
     elif led3.bg == "green":
         led3.bg = "gray"
-     else:
+    else:
         print("Lỗi")
 
 
@@ -67,3 +67,4 @@ PushButton(box_nut, text="Nút 3", grid=[2,0], command=dieu_khien_led3)
 
 
 app.display()
+
