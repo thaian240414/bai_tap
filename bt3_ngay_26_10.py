@@ -35,10 +35,11 @@ app = App(title="Image Viewer", width=400, height=350)
 pic = Picture(app, image="anm.png", width=200, height=200)
 
 
-box = Box(app, align="top", layout="grid")
+box = Box(app, layout="grid")
 
 PushButton(box, text="Mèo", command=cat, grid=[0,0])
 PushButton(box, text="Chó", command=dog, grid=[1,0])
 PushButton(box, text="Chim", command=bird, grid=[2,0])
 
 app.display()
+
